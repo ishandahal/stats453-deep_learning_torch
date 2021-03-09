@@ -291,5 +291,5 @@ if __name__ == "__main__":
         emb_history.append(df)
 
 final_df = pd.concat(emb_history)
-final_df.csv("res.csv", index=False)
+final_df.to_csv("res.csv", index=False)
 
